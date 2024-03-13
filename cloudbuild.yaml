@@ -1,11 +1,11 @@
 steps:
   # Etapa para construir a imagem Docker
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'gcr.io/$PROJECT_ID/projeto', '--build-arg', 'NODE_VERSION=14', '.']
+    args: ['build', '-t', 'gcr.io/$PROJECT_ID/projeto2', '--build-arg', 'NODE_VERSION=14', '.']
 
   # Etapa para fazer o push da imagem Docker para o Container Registry
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', 'gcr.io/$PROJECT_ID/projeto']
+    args: ['push', 'gcr.io/$PROJECT_ID/projeto2']
 
   # Etapa para iniciar o aplicativo
   - name: 'gcr.io/cloud-builders/docker'

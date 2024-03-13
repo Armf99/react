@@ -34,7 +34,7 @@ const Input = () => {
       <form onSubmit={onSubmitForm}>
         <div>
           <label>
-            Username:
+            User:
             <input
               type="text"
               value={username}
@@ -44,7 +44,7 @@ const Input = () => {
         </div>
         <div>
           <label>
-            Password:
+            Pass:
             <input
               type="password"
               value={password}
